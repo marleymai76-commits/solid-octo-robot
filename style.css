@@ -49,21 +49,18 @@ nav a:hover {
 }
 
 /* HERO CORRIGIDA */
+/* HERO CORRIGIDA */
 .hero {
-    background: url("img/imghero-inicio.jpeg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/imgfundo-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
     padding-left: 80px;
+    color: #ffffff;
     position: relative;
-    color: #fff;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
 }
 
 .hero-content, .hero-inner, .hero-text {
