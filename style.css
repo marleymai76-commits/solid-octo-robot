@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-    height: 60px; /* Ajuste este valor se quiser o logo maior ou menor */
+    height: 85px; /* Ajuste este valor se quiser o logo maior ou menor */
     width: auto;
     transition: transform 0.3s ease;
 }
