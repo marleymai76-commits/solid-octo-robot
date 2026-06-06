@@ -1,43 +1,230 @@
-/* Animações e Grids */
-.servicos-grid, .testemunhos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+/* Configurações Globais */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-.servico-item, .testemunho {
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+    margin: 0; 
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header { 
+    padding: 20px 50px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #111111; 
+    border-bottom: 2px solid #b07a3a;
+}
+
+.logo { 
+    font-size: 28px; 
+    font-weight: 600; 
+}
+
+.logo small {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #b07a3a;
+    display: block;
+}
+
+nav a { 
+    color: #ffffff; 
+    margin-left: 30px; 
+    text-decoration: none; 
+    font-size: 14px; 
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #b07a3a;
+}
+
+/* Seção Principal (Hero) */
+.hero { 
+    padding: 120px 20px; 
+    text-align: center; 
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('img/foto1.jpeg') center/cover;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.highlight { 
+    color: #b07a3a; 
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    color: #cccccc;
+}
+
+.btn-whatsapp { 
+    display: inline-block; 
+    padding: 15px 35px; 
+    background: #b07a3a; 
+    color: #ffffff; 
+    text-decoration: none; 
+    font-weight: 600;
+    border-radius: 5px; 
+    transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #8e622d;
+}
+
+/* Nova Estilização: Seção Sobre e Serviços */
+.about-section {
+    padding: 80px 20px;
     background: #252525;
-    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #b07a3a;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.service-card {
+    background: #1e1e1e;
+    padding: 30px 20px;
     border-radius: 8px;
-    border-top: 3px solid #b07a3a;
+    border: 1px solid #333;
+    text-align: left;
+    transition: transform 0.3s, border-color 0.3s;
 }
 
-/* Botão Flutuante */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
-    z-index: 999;
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #b07a3a;
 }
 
-.whatsapp-float img { width: 100%; }
+.service-card h3 {
+    font-size: 18px;
+    color: #b07a3a;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
 
-/* Animação Premium das Fotos */
+.service-card p {
+    color: #cccccc;
+    font-size: 14px;
+    margin: 0;
+}
+
+.why-choose-us {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    border: 1px solid #2d2d2d;
+}
+
+.why-choose-us h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+}
+
+.benefit-item {
+    font-size: 15px;
+    font-weight: 600;
+    color: #eeeeee;
+    text-align: left;
+}
+
+/* Seção de Portfólio / Galeria */
+.portfolio-section {
+    padding: 80px 20px; 
+    background: #1a1a1a;
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .galeria img {
-    transition: transform .3s ease, box-shadow .3s ease;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
+
 .galeria img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: scale(1.03);
 }
 
 /* Rodapé */
 footer {
-    background: #111;
-    padding: 40px;
     text-align: center;
-    color: #888;
+    padding: 30px;
+    background: #111111;
+    color: #777777;
+    font-size: 14px;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav {
+        margin-top: 20px;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .why-choose-us {
+        padding: 25px 15px;
+    }
 }
