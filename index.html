@@ -1,170 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt-pt">
 <head>
-  <meta charset="UTF-8">
-  <title>JMR Montagem de Móveis | Lisboa, Almada e Seixal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Montagem profissional de móveis em Lisboa, Almada, Seixal e região. Precisão, cuidado e mais de 10 anos de experiência.">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMR Montagem de Móveis</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #1a1a1a; color: white; }
+        
+        /* Cabeçalho */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid #333; }
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 30px; }
+        nav ul li a { text-decoration: none; color: #ccc; font-size: 14px; text-transform: uppercase; }
+        nav ul li a.active { color: #c5a059; }
+
+        /* Hero Section */
+        .hero { display: flex; align-items: center; padding: 80px 5%; min-height: 80vh; }
+        .hero-content { flex: 1; padding-right: 50px; }
+        .hero-content h1 { font-size: 48px; line-height: 1.2; margin-bottom: 20px; }
+        .hero-content h1 span { color: #c5a059; }
+        .hero-content p { color: #bbb; margin-bottom: 30px; font-size: 18px; }
+        
+        .btn { 
+            background-color: #8b6b32; color: white; padding: 15px 30px; 
+            text-decoration: none; border-radius: 5px; font-weight: bold;
+            display: inline-flex; align-items: center;
+        }
+        
+        .hero-image { flex: 1; }
+        .hero-image img { width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-content { padding-right: 0; margin-bottom: 40px; }
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">
-        <span class="logo-mark">JMR</span>
-        <span class="logo-text">Montagem de Móveis</span>
-      </div>
-      <nav class="nav">
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="contacto.html" class="nav-cta">Contacto</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="container hero-inner" data-aos="fade-up">
-      <div class="hero-text">
-        <h1>Montagem profissional de móveis</h1>
-        <p>Precisão, cuidado e mais de 10 anos de experiência em Lisboa, Almada, Seixal e região.</p>
-        <div class="hero-actions">
-          <a href="contacto.html" class="btn-gold">Solicitar orçamento</a>
-          <a href="servicos.html" class="btn-outline">Ver serviços</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<header>
+    <div class="logo">JMR <small style="display:block; font-size: 10px; letter-spacing: 1px;">MONTAGEM DE MÓVEIS</small></div>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">INÍCIO</a></li>
+            <li><a href="#">SOBRE</a></li>
+            <li><a href="#">SERVIÇOS</a></li>
+            <li><a href="#">DICAS</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <section class="highlights">
-    <div class="container highlights-grid">
-      <div class="highlight-card" data-aos="fade-up" data-aos-delay="0">
-        <h3>+10 anos de experiência</h3>
-        <p>Montagem de móveis com foco em segurança, alinhamento perfeito e acabamento profissional.</p>
-      </div>
-      <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
-        <h3>Atendimento dedicado</h3>
-        <p>Comunicação clara, pontualidade e respeito total pelo seu espaço e pelos seus móveis.</p>
-      </div>
-      <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Serviço completo</h3>
-        <p>Montagem, desmontagem, ajustes e reorganização de ambientes residenciais e comerciais.</p>
-      </div>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Montagem com <span>precisão.</span><br>Resultado que você vê.</h1>
+        <p>Profissionais qualificados para montar seus móveis com segurança e qualidade.</p>
+        <a href="#" class="btn">SOLICITE UM ORÇAMENTO 💬</a>
     </div>
-  </section>
-
-  <section class="home-services">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Serviços de montagem de móveis</h2>
-        <p>Trabalhamos com todo o tipo de móveis, sempre com cuidado máximo em cada detalhe.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
-          <h3>Montagem de móveis</h3>
-          <p>Montagem de móveis novos ou usados, seguindo instruções do fabricante e boas práticas profissionais.</p>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <h3>Instalação de cozinhas</h3>
-          <p>Montagem de módulos, ferragens, portas e ajustes finos para um resultado alinhado e funcional.</p>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <h3>Montagem de roupeiros</h3>
-          <p>Roupeiros com portas de abrir ou de correr, nivelados e bem fixos para uso diário seguro.</p>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <h3>Desmontagem e mudanças</h3>
-          <p>Desmontagem cuidadosa para mudanças, com identificação das peças para facilitar a remontagem.</p>
-        </div>
-      </div>
-      <div class="section-cta" data-aos="fade-up">
-        <a href="servicos.html" class="btn-outline">Ver todos os serviços</a>
-      </div>
+    <div class="hero-image">
+        <img src="https://via.placeholder.com/600x400" alt="Móvel montado">
     </div>
-  </section>
+</section>
 
-  <section class="home-portfolio">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Trabalhos realizados</h2>
-        <p>Alguns exemplos de montagens e instalações realizadas para clientes na região.</p>
-      </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="0">
-          <div class="portfolio-thumb"></div>
-          <h4>Montagem de roupeiro</h4>
-          <p>Roupeiro de grande porte com portas de correr e interior personalizado.</p>
-        </div>
-        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
-          <div class="portfolio-thumb"></div>
-          <h4>Cozinha completa</h4>
-          <p>Instalação de cozinha com módulos superiores e inferiores, nivelados e alinhados.</p>
-        </div>
-        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
-          <div class="portfolio-thumb"></div>
-          <h4>Quarto completo</h4>
-          <p>Montagem de cama, mesas de cabeceira, cómoda e roupeiro no mesmo ambiente.</p>
-        </div>
-      </div>
-      <div class="section-cta" data-aos="fade-up">
-        <a href="portfolio.html" class="btn-outline">Ver portfólio completo</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>O que dizem os clientes</h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
-          <p>“Montagem impecável, muito cuidadoso com os móveis e super pontual. Recomendo sem hesitar.”</p>
-          <span class="testimonial-name">Ana Rodrigues</span>
-        </div>
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-          <p>“Profissional educado, organizado e rápido. Deixou tudo limpo e bem montado.”</p>
-          <span class="testimonial-name">João Martins</span>
-        </div>
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-          <p>“Excelente trabalho, móveis alinhados e firmes. Serviço de confiança.”</p>
-          <span class="testimonial-name">Carla Silva</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-contact">
-    <div class="container home-contact-inner" data-aos="fade-up">
-      <div>
-        <h2>Precisa de montagem de móveis?</h2>
-        <p>Envie uma mensagem com fotos dos móveis e a localização para receber um orçamento.</p>
-      </div>
-      <div class="home-contact-actions">
-        <a href="contacto.html" class="btn-gold">Ir para contacto</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <span class="logo-mark">JMR</span>
-        <span class="footer-text">Montagem de Móveis • Lisboa, Almada, Seixal e região</span>
-      </div>
-      <div class="footer-right">
-        <a href="mailto:jmrmontagem@gmail.com">jmrmontagem@gmail.com</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
