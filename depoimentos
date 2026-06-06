@@ -1,0 +1,17 @@
+<section class="testemunhos">
+    <h2>O que os clientes dizem</h2>
+    <div class="testemunhos-grid">
+        <div class="testemunho">
+            <p>"Montagem impecável e muito rápida. Recomendo!"</p>
+            <span>— Ana Rodrigues</span>
+        </div>
+        <div class="testemunho">
+            <p>"Profissional educado, cuidadoso e pontual."</p>
+            <span>— João Martins</span>
+        </div>
+        <div class="testemunho">
+            <p>"Excelente trabalho, móveis ficaram perfeitos."</p>
+            <span>— Carla Silva</span>
+        </div>
+    </div>
+</section>
