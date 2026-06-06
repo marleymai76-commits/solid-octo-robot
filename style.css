@@ -62,13 +62,12 @@ nav a:hover {
 
 .highlight { 
     color: #b07a3a; 
-}
-
-.hero p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 40px auto;
-    color: #cccccc;
+.hero {
+  padding: 80px 0 60px;
+  background:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url("img/fundo-hero.jpeg") center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .btn-whatsapp { 
