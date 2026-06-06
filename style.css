@@ -228,3 +228,46 @@ footer {
         padding: 25px 15px;
     }
 }
+/* Animações e Grids */
+.servicos-grid, .testemunhos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.servico-item, .testemunho {
+    background: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 3px solid #b07a3a;
+}
+
+/* Botão Flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+}
+
+.whatsapp-float img { width: 100%; }
+
+/* Animação Premium das Fotos */
+.galeria img {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Rodapé */
+footer {
+    background: #111;
+    padding: 40px;
+    text-align: center;
+    color: #888;
+}
