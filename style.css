@@ -47,9 +47,6 @@ nav a {
 nav a:hover {
     color: #b07a3a;
 }
-
-/* HERO CORRIGIDA */
-/* HERO CORRIGIDA */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/imgfundo-hero.jpeg');
     background-size: cover;
