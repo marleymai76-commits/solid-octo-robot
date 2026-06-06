@@ -22,17 +22,20 @@ header {
     border-bottom: 2px solid #b07a3a;
 }
 
-.logo { 
-    font-size: 28px; 
-    font-weight: 600; 
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-.logo small {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: #b07a3a;
-    display: block;
+.logo img {
+    height: 60px; /* Ajuste este valor se quiser o logo maior ou menor */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
 
 nav a { 
