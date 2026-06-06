@@ -1,102 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-  <meta charset="UTF-8">
-  <title>Contacto | JMR Montagem de Móveis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contacto para montagem de móveis em Lisboa, Almada, Seixal e região.">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <meta charset="UTF-8">
+    <title>Contacto | JMR Montagem de Móveis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto para montagem de móveis em Lisboa, Almada, Seixal e região.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    
+    <style>
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            text-align: left;
+            padding: 40px 20px;
+        }
+        .contact-info ul {
+            padding-left: 20px;
+            color: #cccccc;
+        }
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+        .contact-block {
+            margin-top: 30px;
+        }
+        .contact-block h3 {
+            color: #b07a3a;
+            margin-bottom: 5px;
+        }
+        .contact-block a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 5px;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #b07a3a;
+            outline: none;
+        }
+        .btn-gold {
+            background: #b07a3a;
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        .btn-gold:hover {
+            background: #8c612e;
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">
-        <span class="logo-mark">JMR</span>
-        <span class="logo-text">Montagem de Móveis</span>
-      </div>
-      <nav class="nav">
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="contacto.html" class="nav-cta active">Contacto</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="page-hero">
-    <div class="container" data-aos="fade-up">
-      <h1>Contacto</h1>
-      <p>Envie a sua mensagem para orçamento de montagem de móveis.</p>
-    </div>
-  </section>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="/img/logo-hero.jpeg" alt="Logo JMR Montagem de Móveis">
+        </a>
+        <nav>
+            <a href="index.html#inicio">INÍCIO</a>
+            <a href="index.html#sobre">SERVIÇOS</a>
+            <a href="index.html#portfolio">PORTFÓLIO</a>
+            <a href="contacto.html" class="nav-cta">CONTACTO</a>
+        </nav>
+    </header>
 
-  <section class="contact-section">
-    <div class="container contact-grid">
-      <div class="contact-info" data-aos="fade-right">
-        <h2>Dados de contacto</h2>
-        <p>Para agilizar o orçamento, envie:</p>
-        <ul>
-          <li>Fotos dos móveis (caixas ou já montados).</li>
-          <li>Localização (freguesia / concelho).</li>
-          <li>Se há elevador ou escadas.</li>
-          <li>Se precisa de desmontagem também.</li>
-        </ul>
-        <div class="contact-block">
-          <h3>Email</h3>
-          <a href="mailto:jmrmontagem@gmail.com">jmrmontagem@gmail.com</a>
+    <section class="about-section">
+        <h2>Entre em Contacto</h2>
+        <p style="color: #cccccc; margin-bottom: 20px;">Envie a sua mensagem para orçamento de montagem de móveis.</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Dados de contacto</h2>
+                <p style="color: #cccccc;">Para agilizar o orçamento, envie pelo formulário ou WhatsApp:</p>
+                <ul>
+                    <li>Fotos dos móveis (caixas ou manual).</li>
+                    <li>Localização (freguesia / concelho).</li>
+                    <li>Se há elevador ou escadas no local.</li>
+                    <li>Se também precisa do serviço de desmontagem.</li>
+                </ul>
+                <div class="contact-block">
+                    <h3>Email</h3>
+                    <a href="mailto:jmrmontagem@gmail.com">jmrmontagem@gmail.com</a>
+                </div>
+                <div class="contact-block">
+                    <h3>Regiões atendidas</h3>
+                    <p style="color: #cccccc;">Lisboa, Almada, Seixal, Barreiro e arredores.</p>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2>Formulário de contacto</h2>
+                <form class="contact-form" method="post" action="https://formsubmit.co/jmrmontagem@gmail.com">
+                    <label>
+                        Nome
+                        <input type="text" name="nome" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Localização
+                        <input type="text" name="localizacao" placeholder="Ex: Almada, Seixal, Lisboa" required>
+                    </label>
+                    <label>
+                        Mensagem
+                        <textarea name="mensagem" rows="5" placeholder="Descreva os móveis e o que precisa." required></textarea>
+                    </label>
+                    <button type="submit" class="btn-gold">Enviar mensagem</button>
+                </form>
+            </div>
         </div>
-        <div class="contact-block">
-          <h3>Regiões atendidas</h3>
-          <p>Lisboa, Almada, Seixal, Barreiro e arredores.</p>
-        </div>
-      </div>
+    </section>
 
-      <div class="contact-form-wrapper" data-aos="fade-left">
-        <h2>Formulário de contacto</h2>
-        <!-- Se quiser usar FormSubmit, pode trocar a action abaixo -->
-        <form class="contact-form" method="post" action="#">
-          <label>
-            Nome
-            <input type="text" name="nome" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            Localização
-            <input type="text" name="localizacao" placeholder="Ex: Almada, Seixal, Lisboa" required>
-          </label>
-          <label>
-            Mensagem
-            <textarea name="mensagem" rows="5" placeholder="Descreva os móveis e o que precisa."></textarea>
-          </label>
-          <button type="submit" class="btn-gold">Enviar mensagem</button>
-        </form>
-        <p class="contact-note">
-          Também pode enviar diretamente por email com fotos anexadas.
-        </p>
-      </div>
-    </div>
-  </section>
+    <footer>
+        <p>&copy; 2026 JMR Montagem de Móveis. Todos os direitos reservados.</p>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <span class="logo-mark">JMR</span>
-        <span class="footer-text">Montagem de Móveis • Lisboa, Almada, Seixal e região</span>
-      </div>
-      <div class="footer-right">
-        <a href="mailto:jmrmontagem@gmail.com">jmrmontagem@gmail.com</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
